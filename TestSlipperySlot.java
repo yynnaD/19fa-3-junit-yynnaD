@@ -212,7 +212,7 @@ class TestSlipperySlot {
 	@Test
 	void testThreeAndPowTwo() {
 		SlipperySlot s = new SlipperySlot();
-		int[] values = new int[] {3,3,3,6,7};
+		int[] values = new int[] {3,3,3,2,7};
 		
 		assertEquals(s.payOff(values), 103, "failed testThreeAndPowTwo()");
 	}
@@ -238,7 +238,7 @@ class TestSlipperySlot {
 		SlipperySlot s = new SlipperySlot();
 		int[] values = new int[] {3,3,3,42,2};
 		
-		assertEquals(s.payOff(values), 105, "failed testThreeFortyTwoPowTwo()");
+		assertEquals(s.payOff(values), 105, "failed testThreeFortyTwoPowTwo(x)");
 	}
 	
 	@Test
@@ -280,7 +280,7 @@ class TestSlipperySlot {
 	@Test
 	void testTwoSameAndPowTwo() {
 		SlipperySlot s = new SlipperySlot();
-		int[] values = new int[] {3,3,5,9,7};
+		int[] values = new int[] {3,3,5,2,7};
 		
 		assertEquals(s.payOff(values), 13, "failed testTwoSameAndPowTwo()");
 	}
@@ -304,7 +304,7 @@ class TestSlipperySlot {
 	@Test
 	void testTwoFortyTwoPowTwo() {
 		SlipperySlot s = new SlipperySlot();
-		int[] values = new int[] {3,3,5,9,7};
+		int[] values = new int[] {3,3,5,42,2};
 		
 		assertEquals(s.payOff(values), 15, "failed testTwoFortyTwoPowTwo()");
 	}
@@ -314,7 +314,7 @@ class TestSlipperySlot {
 		SlipperySlot s = new SlipperySlot();
 		int[] values = new int[] {3,3,42,9,2};
 		
-		assertEquals(s.payOff(values), 12, "failed testTwoAll()");
+		assertEquals(s.payOff(values), 22, "failed testTwoAll()");
 	}
 	
 	/*
@@ -332,7 +332,7 @@ class TestSlipperySlot {
 	@Test
 	void testFortyTwo() {
 		SlipperySlot s = new SlipperySlot();
-		int[] values = new int[] {3,2,5,42,10};
+		int[] values = new int[] {3,7,5,42,10};
 		
 		assertEquals(s.payOff(values), 2, "failed testFortyTwo()");
 	}
@@ -340,7 +340,7 @@ class TestSlipperySlot {
 	@Test
 	void testPowTwo() {
 		SlipperySlot s = new SlipperySlot();
-		int[] values = new int[] {4,5,7,11,19};
+		int[] values = new int[] {2,5,7,11,19};
 		
 		assertEquals(s.payOff(values), 3, "failed testPowTwo()");
 	}
@@ -364,7 +364,7 @@ class TestSlipperySlot {
 	@Test
 	void testFortyTwoPowTwo() {
 		SlipperySlot s = new SlipperySlot();
-		int[] values = new int[] {3,3,5,42,2};
+		int[] values = new int[] {3,7,5,42,2};
 		
 		assertEquals(s.payOff(values), 5, "failed testFortyTwoPowTwo()");
 	}
